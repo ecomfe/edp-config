@@ -42,12 +42,11 @@ function getConfigFile() {
 }
 
 /**
- * 获取配置信息对象
+ * 获取所有配置项
  * 
- * @ignore
  * @return {Object}
  */
-function getConfig() {
+exports.all = function () {
     var config = {};
     var configFile = getConfigFile();
     
@@ -56,7 +55,7 @@ function getConfig() {
     }
 
     return config;
-}
+};
 
 /**
  * 获取配置项的值
@@ -65,7 +64,7 @@ function getConfig() {
  * @return {string}
  */
 exports.get = function ( name ) {
-    return getConfig()[ name ];
+    return exports.all()[ name ];
 };
 
 /**
@@ -75,7 +74,7 @@ exports.get = function ( name ) {
  * @param {string} value 配置项的值
  */
 exports.set = function ( name, value ) {
-    var config = getConfig();
+    var config = exports.all();
     var configFile = getConfigFile();
 
     config[ name ] = value;

@@ -12,6 +12,11 @@ edp.get( 'user.name' );
 
 ## API
 
+
+### all()
+
+Get all configuration items.
+
 ### get( name )
 
 Get configuration item.

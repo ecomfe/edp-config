@@ -21,5 +21,20 @@ test( 'API: set and get', function ( t ) {
         'undefined',
         'Configuration item that not setted should be undefined.'
     );
+    t.type(
+        edpConfig.all(),
+        'object',
+        'Method "edpConfig.all" return a object.'
+    );
+    t.equal( 
+        edpConfig.all()[ 'test.name' ], 
+        'erik', 
+        'The return object of "edpConfig.all" has "test.name" property.'
+    );
+    t.equal( 
+        edpConfig.all()[ 'test.age' ], 
+        18, 
+        'The return object of "edpConfig.all" has "test.age" property.'
+    );
     t.end();
 } );
