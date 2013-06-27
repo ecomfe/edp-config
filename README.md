@@ -1,6 +1,6 @@
 # edp-config
 
-The code that edp uses to manage user config
+Package for edp configuration.
 
 ## Usage
 
