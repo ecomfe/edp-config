@@ -6,8 +6,8 @@ Package for edp configuration.
 
 ```javascript
 var edpConfig = require( 'edp-config' );
-edp.set( 'user.name', yourname );
-edp.get( 'user.name' );
+edpConfig.set( 'user.name', yourname );
+edpConfig.get( 'user.name' );
 ```
 
 ## API
