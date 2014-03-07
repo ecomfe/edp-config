@@ -85,3 +85,8 @@ exports.set = function ( name, value ) {
     );
 };
 
+/**
+ * Default Command
+ * @ignore
+ */
+exports.cli = require( './cli' );

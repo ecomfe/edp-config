@@ -1,5 +1,7 @@
 # edp-config
 
+[![Build Status](https://travis-ci.org/ecomfe/edp-config.png?branch=master)](https://travis-ci.org/ecomfe/edp-config) [![Dependencies Status](https://david-dm.org/ecomfe/edp-config.png)](https://david-dm.org/ecomfe/edp-config)
+
 Package for edp configuration.
 
 ## Usage

@@ -7,10 +7,9 @@
         { "name": "leeight", "email" : "leeight@gmail.com" }
     ],
     "devDependencies": {
-        "tap": "~0.4.2"
     },
     "scripts": {
-        "test": "tap test/*.js"
+        "test": "make -C test"
     },
     "main": "index.js",
     "repository": "git://github.com/ecomfe/edp-config"
