@@ -84,3 +84,8 @@ exports.set = function ( name, value ) {
         'UTF-8'
     );
 };
+
+/**
+ * @ignore
+ */
+// exports.cli = require( './cli/config' ).cli;
