@@ -48,6 +48,7 @@ cli.main = function ( args, opts ) {
 
     if ( args.length != 2 ) {
         console.error( 'Invalid arguments' );
+        return;
     }
 
     var name = args[ 0 ];
